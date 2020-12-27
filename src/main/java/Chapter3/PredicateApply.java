@@ -43,5 +43,6 @@ public class PredicateApply {
         // 涉及拆箱和装箱会影响内存和性能，故官方提供了接受原始类型的函数式接口
         IntPredicate intPredicate = (int i ) -> i >= 5;
         intPredicate.test(100); // Predicate<T>只接受引用类型参数，intPredicate接受原始类型
+
     }
 }
